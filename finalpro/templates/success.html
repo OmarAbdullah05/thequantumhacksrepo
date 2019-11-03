@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+
+    header {
+      height: 100vh;
+      background: linear-gradient(to right, rgba(29, 209, 161, 0.29), rgba(29, 209, 161, 0.56)), url('https://images.unsplash.com/photo-1565692012121-0201357fc8f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+    }
+
+    #grabber {
+      color: #2d3436;
+      font-weight: 800;
+      text-align: center;
+      position: relative;
+      top: 30%;
+    }
+
+    .boxy {
+      font-weight: 400;
+      font-size: 1.5em;
+      background-color: #dcdde1;
+      border-color: #dcdde1;
+      color: #2f3640;
+      padding: 0.6em 1.6em;
+      margin: 0.6em;
+      border-style: double;
+      border-radius: 200px;
+      border-width: 1px;
+      text-decoration: none;
+      line-height: 94vh;
+      position: relative;
+      left: 43%;
+    }
+
+    .boxy:hover {
+      text-decoration: none;
+      cursor: pointer;
+      background-color: transparent;
+      border-color: black;
+      color: #2f3640;
+      transition: all 0.2s ease;
+    }
+
+    #lessenlogo {
+      width: 7%;
+    }
+
+    #navbarNav {
+      position: relative;
+      left: 24%;
+    }
+
+    #bois {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    #bois::after {
+      content: "";
+      width: 100px;
+      position: absolute;
+      margin: 0 auto;
+      height: 3px;
+      background: #000;
+      left: 0;
+      right: 0;
+      top: 125%;
+    }
+
+    #tomove {
+      padding-top: 55px;
+      position: relative;
+      left: 13%;
+    }
+
+    #they {
+      padding-top: 20px;
+    }
+
+    .colorit {
+      color: #10ac84;
+    }
+
+    #lesslessen {
+      width: 15%;
+    }
+
+    #eaexp {
+      padding-left: 10px;
+    }
+
+    .checkmark {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10%;
+      padding-block-start: 300px;
+    }
+
+    /*footer classes and ids begin here*/
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      background-color: #eaf0f2;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font: 14px/1.5 Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 100px;
+      margin-bottom: 200px;
+    }
+
+    header h1 {
+      font: normal 32px/1.5 'Open Sans', sans-serif;
+      color: #3F71AE;
+      padding-bottom: 16px;
+    }
+
+    header h2 {
+      color: #F05283;
+    }
+
+    header h2 a {
+      color: inherit;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid #F05283;
+      padding: 10px 15px;
+      border-radius: 3px;
+      font: bold 14px/1 'Open Sans', sans-serif;
+      text-transform: uppercase;
+    }
+
+    header h2 a:hover {
+      background-color: #F05283;
+      transition: 0.2s;
+      color: #fff;
+    }
+
+    header ul {
+      max-width: 600px;
+      margin: 60px auto 0;
+    }
+
+    header ul a {
+      text-decoration: none;
+      color: #FFF;
+      text-align: left;
+      background-color: #B9C1CA;
+      padding: 10px 16px;
+      border-radius: 2px;
+      opacity: 0.8;
+      font-size: 16px;
+      display: inline-block;
+      margin: 4px;
+      line-height: 1;
+      outline: none;
+
+      transition: 0.2s ease;
+    }
+
+    header ul li a.active {
+      background-color: #66B650;
+      pointer-events: none;
+    }
+
+    header ul li a:hover {
+      opacity: 1;
+    }
+
+    header ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header ul li {
+      display: inline-block;
+    }
+
+
+
+    /* In our demo, the footers are fixed to the bottom of the page */
+
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+
+    @media (max-height:800px) {
+      footer {
+        position: static;
+      }
+
+      header {
+        padding-top: 40px;
+      }
+    }
+
+    .footer-basic-centered {
+      background-color: #292c2f;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+      font: normal 18px sans-serif;
+
+      padding: 45px;
+      margin-top: 80px;
+    }
+
+    .footer-basic-centered .footer-company-motto {
+      color: #8d9093;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .footer-basic-centered .footer-company-name {
+      color: #8f9296;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .footer-basic-centered .footer-links {
+      list-style: none;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 35px 0 23px;
+      margin: 0;
+    }
+
+    .footer-basic-centered .footer-links a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* If you don't want the footer to be responsive, remove these media queries */
+
+    @media (max-width: 600px) {
+
+      .footer-basic-centered {
+        padding: 35px;
+      }
+
+      .footer-basic-centered .footer-company-motto {
+        font-size: 18px;
+      }
+
+      .footer-basic-centered .footer-company-name {
+        font-size: 12px;
+      }
+
+      .footer-basic-centered .footer-links {
+        font-size: 14px;
+        padding: 25px 0 20px;
+      }
+
+      .footer-basic-centered .footer-links a {
+        line-height: 1.8;
+      }
+    }
+  </style>
+  <title>Progue</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> <img id="lessenlogo" src="https://image.flaticon.com/icons/svg/1104/1104729.svg" alt=""> Progue </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <p id="grabber" class="display-2">Success<br>Thanks for your purchase</p>
+    <img src="https://image.flaticon.com/icons/svg/54/54841.svg" class="checkmark">
+  </header>
+
+  <footer class="footer-basic-centered">
+
+    <p class="footer-company-motto">Detect It Before Its Too Late</p>
+
+    <p class="footer-links">
+      <a href="/">Home</a>
+
+      <a href="/register">Pricing</a>
+      ·
+      <a href="">Mail us: 521 Williams Court Englishtown, NJ 07726</a>
+      ·
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Email us: generic@gmail.com</a>
+    </p>
+
+    <p class="footer-company-name">Progue &copy; 2019</p>
+
+  </footer>
+
+
+
+</body>
+
+</html>
